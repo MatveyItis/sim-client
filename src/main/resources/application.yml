@@ -1,0 +1,16 @@
+server:
+  port: 3001
+
+spring:
+  application:
+    name: sim-client
+  freemarker:
+    template-loader-path: classpath:templates
+    suffix: .ftl
+
+
+sim-server:
+  host: http://localhost:8080
+  urls:
+    create-game: /newGame
+    get-game-state: /state
